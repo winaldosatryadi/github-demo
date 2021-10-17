@@ -1,13 +1,13 @@
 import "./Date.css";
 
-const Date = () => {
+export const Date = (props) => {
   return (
     <div className="todo-date">
-      <div className="todo-date__month">January</div>
-      <div className="todo-date__year">2021</div>
-      <div className="todo-date__day">23</div>
+      <div className="todo-date__month">{props.bulan}</div>
+      <div className="todo-date__year">{props.tahun}</div>
+      <div className="todo-date__day">{props.tanggal}</div>
     </div>
   );
 };
 
-export default Date;
+// export default Date;

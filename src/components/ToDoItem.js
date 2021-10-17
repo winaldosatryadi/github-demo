@@ -1,14 +1,22 @@
-import Date from "./Date";
+import { Date as DateItem } from "./Date";
 import Card from "./UI/Card";
 import "./ToDoItem.css";
 
 const ToDoItem = () => {
+  const todoDate = new Date(2021, 6, 12);
+  const todoActivity = "Belajar React";
+  const todoTime = "10.00-11.00";
+
   return (
     <Card className="todo-item">
-      <Date />
+      <DateItem
+        tanggal={todoDate.getDate()}
+        bulan={todoDate.toLocaleString("default", { month: "long" })}
+        tahun={todoDate.getFullYear()}
+      />
       <div className="todo-item__description">
-        <h2>Belajar React</h2>
-        <div className="todo-item__time">10.00-11.00</div>
+        <h2>{todoActivity}</h2>
+        <div className="todo-item__time">{todoTime}</div>
       </div>
     </Card>
   );
