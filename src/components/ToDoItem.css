@@ -1,0 +1,37 @@
+.todo-item {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem;
+  margin: 1rem 0;
+  background-color: #4b4b4b;
+}
+
+.todo-item__description {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  flex-flow: row;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.todo-item h2 {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+
+.todo-item__time {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(10, 221, 236, 0.767);
+  background-color: #27292b;
+  padding: 0.75rem;
+  border-radius: 12px;
+  box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 14px #00000080;
+}
