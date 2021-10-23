@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./ToDoForm.css";
 import Card from "./UI/Card";
 
-const ToDoForm = () => {
+const ToDoForm = (props) => {
   const [enteredActivity, setEnteredActivity] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
   const [enteredTimeStart, setEnteredTimeStart] = useState("");
@@ -36,6 +36,8 @@ const ToDoForm = () => {
     setEnteredTimeStart("");
     setEnteredTimeEnd("");
     setEnteredDate("");
+
+    props.onAddToDo(todoData);
   };
 
   return (

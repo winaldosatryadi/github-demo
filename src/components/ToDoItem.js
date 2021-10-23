@@ -12,10 +12,14 @@ const ToDoItem = (props) => {
       />
       <div className="todo-item__description">
         <h2>{props.todoActivity}</h2>
-        <div className="todo-item__time">{props.todoTime}</div>
+        <div className="todo-item__time">
+          {props.todoTimeStart}-{props.todoTimeEnd}
+        </div>
       </div>
     </Card>
   );
 };
 
 export default ToDoItem;
+
+//note: todoItem diganti
